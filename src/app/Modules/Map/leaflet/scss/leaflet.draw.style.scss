@@ -1,0 +1,26 @@
+.leaflet-draw-toolbar a {
+  background-image: url('/assets/images/leaflet/spritesheet.png');
+  background-repeat: no-repeat;
+  &.disabled {
+    pointer-events: none;
+    background-color: #ccc !important;
+  }
+}
+
+.leaflet-retina .leaflet-draw-toolbar a {
+  background-image: url('/assets/images/leaflet/spritesheet-2x.png');
+  background-size: 270px 30px;
+}
+
+.color-picker label, .opacity-input label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.leaflet-marker-draggable {
+  cursor: move;
+}
+
+.leaflet-edit-resize {
+  cursor: nesw-resize;
+}

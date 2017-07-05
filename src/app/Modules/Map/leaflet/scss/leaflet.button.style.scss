@@ -1,0 +1,6 @@
+.leaflet-button {
+  &.disabled {
+    pointer-events: none;
+    background-color: #ccc !important;
+  }
+}

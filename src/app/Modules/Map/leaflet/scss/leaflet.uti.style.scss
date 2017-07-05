@@ -1,0 +1,28 @@
+.leaflet-uti-imgs {
+  ul {
+    padding-left: 0
+  }
+  .hideable {
+    display: none;
+    &.show {
+      display: block !important;
+    }
+  }
+  .carousel-img {
+    text-align: center;
+    img{
+      max-width: 100% !important;
+      max-height: 250px;
+    }
+  }
+  .carousel-control {
+    height: calc(100% - 170px);
+    background-image: none;
+    margin-top: 20px;
+  }
+  .table-detail {
+    td, th {
+      border: none;
+    }
+  }
+}

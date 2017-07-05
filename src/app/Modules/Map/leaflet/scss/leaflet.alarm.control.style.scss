@@ -1,0 +1,35 @@
+.alarm-sidebar {
+  height: calc(100% - 35px);
+  margin-top: 35px;
+  overflow: auto;
+  .alarm-container {
+    .alarm-name {
+      &.active-item {
+        background-color: #c7c7c7;
+      }
+    }
+  }
+}
+
+.alarm-search-box {
+  position: absolute;
+  width: 400px;
+  input {
+    outline: none;
+  }
+}
+
+.leaflet-sidebar {
+  #sidebar {
+    overflow-y: hidden !important;
+    .leaflet-control-command-interior {
+      position: relative;
+      top: 35px;
+    }
+  }
+}
+.leaflet-control-button-alarm {
+  &.has-notification {
+    color: red !important;
+  }
+}

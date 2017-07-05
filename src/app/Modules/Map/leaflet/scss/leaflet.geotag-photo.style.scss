@@ -1,0 +1,82 @@
+.leaflet-geotag-photo-crosshair {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 999;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.leaflet-geotag-photo-crosshair > * {
+  position: relative;
+  z-index: 1001;
+  margin: auto;
+}
+
+.leaflet-control-geotag-photo-camera, .leaflet-control-geotag-photo-crosshair {
+  width: 100%;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+#map-container, #map {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#slider-container {
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.5);
+  border-style: solid;
+  width: 30%;
+  left: calc(50% - 15%);
+  z-index: 9999;
+  position: absolute;
+  bottom: 20px;
+  margin: 0 auto;
+  background-color: white;
+  padding: .5em 1em;
+  border-radius: 20px;
+  display: flex;
+}
+
+#slider {
+  margin: 0 1em;
+  padding: 0;
+  width: 100%;
+}
+
+#angle {
+  text-align: right;
+  width: 4.5em;
+}
+
+pre {
+  margin: 0;
+}
+
+#sidebar, .hljs {
+  background-color: #fafafa;
+}
+
+.focus-effect-point {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-animation: uti-highlight 0.5s ease-in-out 0s 5; /* Safari 4.0 - 8.0 */
+  animation: uti-highlight 0.5s ease-in-out 0s 5;
+}

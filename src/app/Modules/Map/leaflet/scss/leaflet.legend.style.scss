@@ -1,0 +1,19 @@
+.leaflet-container .leaflet-control-legend {
+  position: relative;
+  background: none;
+  color: #1978cf;
+  z-index: 1000;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 100px;
+  display: table;
+  .legend-color {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 10px 0 5px;
+  }
+  .legend-container-row {
+    margin: 5px;
+  }
+}

@@ -1,0 +1,61 @@
+.control-filter {
+  position: absolute;
+  background: white;
+  width: 200px;
+  height: 250px;
+  right: 33px;
+  top: 63px;
+  box-shadow: 2px 2px 5px #636363;
+  padding: 5px 0 5px 10px;
+  visibility: hidden;
+  &.show {
+    visibility: visible;
+  }
+  .content {
+    height: 100%;
+    overflow: auto;
+    padding: 5px;
+    li {
+      list-style-type: none;
+      ol.filterItem {
+        padding-left: 25px;
+      }
+    }
+    .filter-cell {
+      padding-bottom: 5px;
+      .no-filter-data {
+        padding-top: 5px;
+        padding-right: 10px;
+      }
+      .options {
+        border-bottom: solid 1px #eaeaea;
+        .label-options {
+          padding: 5px 0;
+          cursor: pointer;
+          display: inline-block;
+          width: 85px;
+          text-align: left;
+          color: #717171;
+          &:hover {
+            color: #000;
+          }
+        }
+      }
+      > ul {
+        padding: 10px 0 0;
+        li {
+          label.checkbox {
+            &:hover {
+              background-color: #f5f5f5;
+            }
+          }
+        }
+      }
+
+      .custom-checkbox {
+        margin: 6px 0;
+        display: block;
+      }
+    }
+  }
+}

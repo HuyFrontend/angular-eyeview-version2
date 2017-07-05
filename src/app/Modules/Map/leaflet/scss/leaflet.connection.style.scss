@@ -1,0 +1,11 @@
+&.leaflet-clickable {
+  &.no-display {
+    pointer-events: none;
+    &text {
+      fill: none;
+    }
+    &path {
+      stroke: none;
+    }
+  }
+}
